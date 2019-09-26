@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding:0px;
+    font-family: Ubuntu, Consolas;
+    background-color: rgba(127, 255, 212, 0.438);
+}
+.container{
+  /* position: absolute;
+  z-index: -10; */
+  background: rgb(255, 255, 0);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index-fondo{
+  vertical-align: middle;
+  background-size: cover;
+  background-position: center;
+  
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(images/auto.jpeg); 
+}
+.exito-fondo{
+  vertical-align: middle;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(images/gracias.jpeg); 
+}
+.container a{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 6px;
+    width: 150px;
+    padding: 10px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+    color:rgb(255, 255, 0);
+    background-color: black;
+    border:1px solid rgb(255, 255, 0);
+}
+.container a:hover{
+    color:black;
+    background-color: rgb(255, 255, 0);
+    border:1px solid black;
+    box-shadow: 0 8px 16px 0  rgb(255, 255, 0);
+
+}
+.container .text {
+    padding: 10px;
+    text-align: center;
+}
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 1px;
+    padding: 30px 15px 15px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 0);
+  }
+  form > div {
+    position: relative;
+    background: white;
+    border-bottom: 1px solid #ccc;
+  }
+  form > div > label {
+    opacity: 0.3;
+    font-weight: bold;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+  }
+  form > div > input[type="text"],
+  form > div > input[type="email"]{
+    width: 100%;
+    border: 0;
+    padding: 20px 20px 20px 50px;
+    background: #eee;
+  }
+  form > div > input[type="text"]:focus,
+  form > div > input[type="email"]:focus,
+  form > div > input[type="password"]:focus {
+    outline: 0;
+    background: white;
+  }
+  form > div > input[type="text"]:focus + label,
+  form > div > input[type="email"]:focus + label,
+  form > div > input[type="password"]:focus + label {
+    opacity: 0;
+  }
+  form > div > input[type="text"]:valid,
+  form > div > input[type="email"]:valid,
+  form > div > input[type="password"]:valid {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+  }
+  form > div > input[type="text"]:valid + label,
+  form > div > input[type="email"]:valid + label,
+  form > div > input[type="password"]:valid + label {
+    opacity: 0;
+  }
+  form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+  form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
+  form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+    background: pink;
+  }
+  form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown) + label,
+  form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) + label,
+  form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+    opacity: 0;
+  }
+  form > div > input[type="text"]:invalid:focus:not(:placeholder-shown) ~ .requirements,
+  form > div > input[type="email"]:invalid:focus:not(:placeholder-shown) ~ .requirements,
+  form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+    max-height: 200px;
+    padding: 0 30px 20px 50px;
+  }
+  form > div .requirements {
+    padding: 0 30px 0 50px;
+    color: #999;
+    max-height: 0;
+    transition: 0.28s;
+    overflow: hidden;
+    color: red;
+    font-style: italic;
+  }
+  form input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 25px auto;
+    color:rgb(255, 255, 0);
+    background-color: black;
+    border:0.5px solid rgb(255, 255, 0);
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  form input[type="submit"]:hover {
+    color:black;
+    background-color:rgb(255, 255, 0);
+    border:0.5px solid black;
+  }
+  .container .text p{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 4px;
+    background-color:#ffff00cf;
+    line-height:2;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform: skewY(-2deg);
+    border-radius: 5px;
+  }
+  .container .mensaje p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 4px;
+    background-color:#ffff00cf;
+    line-height:2;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+ @media (max-width:450px) {
+      form{
+          padding-top: 1px;
+          padding-bottom:1px; 
+          margin-right:10px;
+          margin-left: 10px; 
+      }
+      .container form h1{
+           margin-top:5px;
+           margin-bottom: 5px; 
+      }
+ }
